@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { login } from '../../features/Userslice';
 
 
+
+
 const Login = () => {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
@@ -25,8 +27,9 @@ const Login = () => {
 
   return (
   
+    <>
     
-
+    
     <div className="login">
         <form className="login_form" onSubmit={(e) => handleSubmit(e)}>
             <h1>Login Here 📗</h1>
@@ -40,6 +43,7 @@ const Login = () => {
         </form>
       
     </div>
+    </>
   
   
   
